@@ -5,7 +5,11 @@
     }
   },
   "routes": [
-    { "src": "/(.*)", "dest": "/api/index.php" }
+    { "src": "/(.*)", "dest": "/api/index.php" },
+    { "src": "/get.php", "dest": "/api/get.php" },
+    { "src": "/play.php", "dest": "/api/play.php" },
+    { "src": "/channel.json", "dest": "/api/channel.json" },
+    { "src": "/assets/style.css", "dest": "/api/assets/style.css" }
     
   ]
 }
