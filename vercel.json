@@ -1,27 +1,8 @@
 {
-  "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.7.1"
-    }
-  },
-  "routes": [
-    { "src": "/(.*)", "dest": "/api/index.php" },
-    { "src": "/get.php", "dest": "/api/get.php" },
-    { "src": "/play.php", "dest": "/api/play.php" },
-    { "src": "/channel.json", "dest": "/api/channel.json" },
-    { "src": "/assets/style.css", "dest": "/api/assets/style.css" },
-
-    { "src": "/(.*)", "dest": "/api/index.php" },
-    { "src": "/api/get.php", "dest": "/api/get.php" },
-    { "src": "/api/play.php", "dest": "/api/play.php" },
-    { "src": "/api/channel.json", "dest": "/api/channel.json" },
-    { "src": "/api/assets/style.css", "dest": "/api/assets/style.css" },
-
-    { "src": "/(.*)", "dest": "/api/index.php" },
-    { "src": "/get.php", "dest": "/get.php" },
-    { "src": "/play.php", "dest": "/play.php" },
-    { "src": "/channel.json", "dest": "/channel.json" },
-    { "src": "/assets/style.css", "dest": "/assets/style.css" }
-    
-  ]
+    "functions": {
+        "api/**/*.php": { runtime: "vercel-php@0.6.0" },
+    },
+    "routes": [
+        { src: "/(.*)", dest: "/api/index.php" }
+    ],
 }
