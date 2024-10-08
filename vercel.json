@@ -12,6 +12,12 @@
     { "src": "/assets/style.css", "dest": "/api/assets/style.css" },
 
     { "src": "/(.*)", "dest": "/api/index.php" },
+    { "src": "/api/get.php", "dest": "/api/get.php" },
+    { "src": "/api/play.php", "dest": "/api/play.php" },
+    { "src": "/api/channel.json", "dest": "/api/channel.json" },
+    { "src": "/api/assets/style.css", "dest": "/api/assets/style.css" },
+
+    { "src": "/(.*)", "dest": "/api/index.php" },
     { "src": "/get.php", "dest": "/get.php" },
     { "src": "/play.php", "dest": "/play.php" },
     { "src": "/channel.json", "dest": "/channel.json" },
