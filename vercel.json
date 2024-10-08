@@ -6,5 +6,9 @@
   },
   "routes": [
     { "src": "/(.*)", "dest": "/api/index.php" }
+    { "src": "/play.php", "dest": "/api/play.php" },
+    { "src": "/get.php", "dest": "/api/get.php" }
+    { "src": "/channel.json", "dest": "/api/channel.json" },
+    { "src": "/assets/style.css", "dest": "/api/assets/style.css" }
   ]
 }
